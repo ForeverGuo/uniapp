@@ -11,6 +11,7 @@
   "author": "grantguo",
   "license": "ISC",
   "devDependencies": {
+    "vuex": "^3.6.2",
     "grantlibs": "^1.0.19",
     "uview-ui": "^2.0.37"
   }
