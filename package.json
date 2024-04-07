@@ -1,0 +1,17 @@
+{
+  "name": "uniapp-vue3",
+  "version": "1.0.0",
+  "description": "uniapp vue3 template",
+  "main": "index.js",
+  "license": "MIT",
+  "keywords": [
+    "uniapp",
+    "vue3"
+  ],
+  "author": "grantguo",
+  "devDependencies": {
+    "grantlibs": "^1.0.19",
+    "pinia": "^2.0.22",
+    "vk-uview-ui": "^1.5.2"
+  }
+}
