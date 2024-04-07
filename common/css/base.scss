@@ -1,0 +1,165 @@
+/*-------------------页面公共的css---------------*/
+/* 生成padding和margin */
+@for $n from 0 to 120 {
+	.pt#{$n} {
+		padding-top: #{$n}rpx;
+	}
+	.pb#{$n} {
+		padding-bottom: #{$n}rpx;
+	}
+	.pl#{$n} {
+		padding-left: #{$n}rpx;
+	}
+	.pr#{$n} {
+		padding-right: #{$n}rpx;
+	}
+	.plr#{$n} {
+		padding-left: #{$n}rpx;
+		padding-right: #{$n}rpx;
+	}
+	.ptb#{$n} {
+		padding-top: #{$n}rpx;
+		padding-bottom: #{$n}rpx;
+	}
+	.pd#{$n} {
+		padding-left: #{$n}rpx;
+		padding-right: #{$n}rpx;
+		padding-top: #{$n}rpx;
+		padding-bottom: #{$n}rpx;
+	}
+
+	.mt#{$n} {
+		margin-top: #{$n}rpx;
+	}
+	.mb#{$n} {
+		margin-bottom: #{$n}rpx;
+	}
+	.ml#{$n} {
+		margin-left: #{$n}rpx;
+	}
+	.mr#{$n} {
+		margin-right: #{$n}rpx;
+	}
+	.mlr#{$n} {
+		margin-left: #{$n}rpx;
+		margin-right: #{$n}rpx;
+	}
+	.mtb#{$n} {
+		margin-top: #{$n}rpx;
+		margin-bottom: #{$n}rpx;
+	}
+	.mg#{$n} {
+		margin-top: #{$n}rpx;
+		margin-bottom: #{$n}rpx;
+		margin-left: #{$n}rpx;
+		margin-right: #{$n}rpx;
+	}
+
+	.lh#{$n} {
+		line-height: #{$n}rpx;
+	}
+}
+
+/* 字体大小 */
+@for $i from 8 through 100 {
+	.fs#{$i} {
+		font-size: #{$i}rpx;
+	}
+}
+
+// 功能开发中样式
+.dev-func-style {
+	opacity: 0.5;
+}
+
+// 颜色
+.bg-fff {
+	background-color: #fff;
+}
+
+.c-fff {
+	color: #fff;
+}
+.c-000 {
+	color: #000;
+}
+.c-333 {
+	color: #333;
+}
+.c-666 {
+	color: #666;
+}
+.c-999 {
+	color: #999;
+}
+.c-ccc {
+	color: #ccc;
+}
+.c-blue {
+	color: #4298ff;
+}
+.c-red {
+	color: #ff3141;
+}
+.c-yellow {
+	color: #f1ad7c;
+}
+
+// flex常用布局
+.flex-box {
+	display: flex;
+}
+.flex-item {
+	flex: 1;
+}
+.just-between {
+	display: flex;
+	justify-content: space-between;
+}
+.just-around {
+	display: flex;
+	justify-content: space-around;
+}
+.align-center {
+	display: flex;
+	align-items: center;
+}
+
+.just-center {
+	justify-content: center;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.tc {
+	text-align: center;
+}
+
+.tl {
+	text-align: left;
+}
+
+.tr {
+	text-align: right;
+}
+.fb {
+	font-weight: bold;
+}
+
+.border-box {
+	box-sizing: border-box;
+}
+
+.border-bottom {
+	border-bottom: 2rpx solid #333;
+}
+
+.border-left {
+	border-left: 2rpx solid #333;
+}

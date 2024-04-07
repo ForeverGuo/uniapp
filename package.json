@@ -1,0 +1,17 @@
+{
+  "name": "uniapp-vue2",
+  "version": "1.0.0",
+  "description": "uniapp vue2 template",
+  "main": "main.js",
+  "scripts": {},
+  "keywords": [
+    "uniapp",
+    "vue2"
+  ],
+  "author": "grantguo",
+  "license": "ISC",
+  "devDependencies": {
+    "grantlibs": "^1.0.19",
+    "uview-ui": "^2.0.37"
+  }
+}
