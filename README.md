@@ -1,3 +1,5 @@
+### vue3 + pinia + vk-uview-ui
+
 ### 项目架构
 
 ```js
@@ -38,7 +40,7 @@
 
 ### 引导
  
- 1. npm install or yarn add
+ 1. npm install or yarn
 
  2. open the HbuilderX 工具
 
