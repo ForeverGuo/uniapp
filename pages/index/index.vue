@@ -11,7 +11,7 @@
 	export default {
 		data() {
 			return {
-				title: ' welcome to use uniapp vue2 '
+				title: ' welcome to use vue2 '
 			}
 		},
 		onLoad() {},

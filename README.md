@@ -1,3 +1,5 @@
+### vue2 + vuex + uview-ui
+
 ### 项目架构
 
 ```js
