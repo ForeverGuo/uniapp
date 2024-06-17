@@ -3,7 +3,7 @@
 		<view class="text-area">
 			<text class="title">{{ title }}</text>
 		</view>
-		<u-button type="success" class="mt10">uk-uview</u-button>
+		<!-- <u-button type="success" class="mt10">uk-uview</u-button> -->
 	</view>
 </template>
 

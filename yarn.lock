@@ -20,11 +20,6 @@ pinia@^2.0.22:
     "@vue/devtools-api" "^6.5.0"
     vue-demi ">=0.14.5"
 
-vk-uview-ui@^1.5.2:
-  version "1.5.2"
-  resolved "https://registry.npmmirror.com/vk-uview-ui/-/vk-uview-ui-1.5.2.tgz#15c8f6a68ff700d8ebfc346d7bccb2bf99da1297"
-  integrity sha512-RRZgiEAc8qaUerSi7lSbrkCoLBgRUwFQHwP1V44pJO7Js+7HeHFEkkpPrtkOi14hl4CntR4qIhIDvaKmIJqVsw==
-
 vue-demi@>=0.14.5:
   version "0.14.7"
   resolved "https://registry.npmmirror.com/vue-demi/-/vue-demi-0.14.7.tgz#8317536b3ef74c5b09f268f7782e70194567d8f2"

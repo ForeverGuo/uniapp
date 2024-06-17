@@ -1,0 +1,96 @@
+/*
+	此文件为gtUI的主题变量，这些变量目前只能通过uni.scss引入才有效，另外由于
+	uni.scss中引入的样式会同时混入到全局样式文件和单独每一个页面的样式中，造成微信程序包太大，
+	故uni.scss只建议放scss变量名相关样式，其他的样式可以通过main.js或者App.vue引入
+*/
+
+	// Color Palette
+	$gt-black: #000;
+	$gt-white: #fff;
+	$gt-gray-1: #f7f8fa;
+	$gt-gray-2: #f2f3f5;
+	$gt-gray-3: #ebedf0;
+	$gt-gray-4: #dcdee0;
+	$gt-gray-5: #c8c9cc;
+	$gt-gray-6: #969799;
+	$gt-gray-7: #646566;
+	$gt-gray-8: #323233;
+	$gt-red: #ee0a24;
+	$gt-blue: #1989fa;
+	$gt-orange: #ff976a;
+	$gt-orange-dark: #ed6a0c;
+	$gt-orange-light: #fffbe8;
+	$gt-green: #07c160;
+
+
+	// Gradient Colors
+	$gt-gradient-red: linear-gradient(to right, #ff6034, #ee0a24);
+	$gt-gradient-orange: linear-gradient(to right, #ffd01e, #ff8917);
+
+	// Component Colors
+	$gt-primary-color: $gt-blue;
+	$gt-success-color: $gt-green;
+	$gt-danger-color: $gt-red;
+	$gt-warning-color: $gt-orange;
+	$gt-text-color: $gt-gray-8;
+	$gt-text-color-2: $gt-gray-6;
+	$gt-text-color-3: $gt-gray-5;
+	$gt-active-color: $gt-gray-2;
+	$gt-active-opacity: 0.6;
+	$gt-disabled-opacity: 0.5;
+	$gt-background: $gt-gray-1;
+	$gt-background-2: $gt-white;
+	$gt-background-3: $gt-white;
+
+  // Padding
+  $gt-padding-base: 4px;
+  $gt-padding-xs: 8px;
+  $gt-padding-sm: 12px;
+  $gt-padding-md: 16px;
+  $gt-padding-lg: 24px;
+  $gt-padding-xl: 32px;
+
+  // Font
+  $gt-font-bold: 600;
+  $gt-font-size-xs: 10px;
+  $gt-font-size-sm: 12px;
+  $gt-font-size-md: 14px;
+  $gt-font-size-lg: 16px;
+  $gt-line-height-xs: 14px;
+  $gt-line-height-sm: 18px;
+  $gt-line-height-md: 20px;
+  $gt-line-height-lg: 22px;
+	
+  /* stylelint-disable */
+  $gt-base-font: -apple-system, BlinkMacSystemFont, 'Helvetica Neue',
+    Helvetica, Segoe UI, Arial, Roboto, 'PingFang SC', 'miui',
+    'Hiragino Sans GB', 'Microsoft Yahei', sans-serif;
+  $gt-price-font: avenir-heavy, 'PingFang SC', helvetica neue, arial,
+    sans-serif;
+  /* stylelint-enable */
+
+  // Animation
+  $gt-duration-base: 0.3s;
+  $gt-duration-fast: 0.2s;
+  $gt-ease-out: ease-out;
+  $gt-ease-in: ease-in;
+
+  // Border
+  $gt-border-color: $gt-gray-3;
+  $gt-border-width: 1px;
+  $gt-radius-sm: 2px;
+  $gt-radius-md: 4px;
+  $gt-radius-lg: 8px;
+  $gt-radius-max: 999px;
+
+
+	.gt-theme-dark {
+		$gt-text-color: #f5f5f5;
+		$gt-text-color-2: #707070;
+		$gt-text-color-3: #4d4d4d;
+		$gt-border-color: #3a3a3c;
+		$gt-active-color: #3a3a3c;
+		$gt-background: #000;
+		$gt-background-2: #1c1c1e;
+		$gt-background-3: #37363b;
+	}

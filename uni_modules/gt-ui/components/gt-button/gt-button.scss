@@ -1,0 +1,163 @@
+@import '../../libs/css/component.scss';
+
+$gt-button-mini-height: 24px !default;
+$gt-button-mini-padding: 0 $gt-padding-base;
+$gt-button-mini-font-size: $gt-font-size-xs;
+$gt-button-small-height: 32px !default;
+$gt-button-small-padding: 0 $gt-padding-xs;
+$gt-button-small-font-size: $gt-font-size-sm;
+$gt-button-normal-padding: 0 15px !default;
+$gt-button-normal-font-size: $gt-font-size-md;
+$gt-button-large-height: 50px !default;
+$gt-button-default-height: 44px !default;
+$gt-button-default-line-height: 1.2 !default;
+$gt-button-default-font-size: $gt-font-size-lg;
+$gt-button-default-color: $gt-text-color;
+$gt-button-default-background: $gt-background-2;
+$gt-button-default-border-color: $gt-gray-4;
+$gt-button-primary-color: $gt-white;
+$gt-button-primary-background: $gt-primary-color;
+$gt-button-primary-border-color: $gt-primary-color;
+$gt-button-success-color: $gt-white;
+$gt-button-success-background: $gt-success-color;
+$gt-button-success-border-color: $gt-success-color;
+$gt-button-danger-color: $gt-white;
+$gt-button-danger-background: $gt-danger-color;
+$gt-button-danger-border-color: $gt-danger-color;
+$gt-button-warning-color: $gt-white;
+$gt-button-warning-background: $gt-warning-color;
+$gt-button-warning-border-color: $gt-warning-color;
+$gt-button-border-width: $gt-border-width;
+$gt-button-radius: $gt-radius-md;
+$gt-button-round-radius: $gt-radius-max;
+$gt-button-plain-background: $gt-white;
+$gt-button-disabled-opacity: $gt-disabled-opacity;
+$gt-button-icon-size: 1.2em !default;
+$gt-button-loading-icon-size: 20px !default;
+
+
+.gt-theme-dark {
+  $gt-button-plain-background: transparent;
+}
+
+.gt-button {
+	@include flex(row);
+	
+  position: relative;
+  box-sizing: border-box;
+  height: $gt-button-default-height;
+  margin: 0;
+  padding: 0 20rpx;
+  font-size: $gt-button-default-font-size;
+  border-radius: $gt-button-radius;
+  cursor: pointer;
+  transition: opacity $gt-duration-fast;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: auto;
+	
+	&::before {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 100%;
+		height: 100%;
+		background: $gt-black;
+		border: inherit;
+		border-color: $gt-black;
+		border-radius: inherit; /* inherit parent's border radius */
+		transform: translate(-50%, -50%);
+		opacity: 0;
+		content: ' ';
+	}
+	
+	
+	  &--default {
+	    color: $gt-button-default-color;
+	    background: $gt-button-default-background;
+	    border: $gt-button-border-width solid
+	      $gt-button-default-border-color;
+	  }
+		
+		&--primary {
+			color: $gt-button-primary-color;
+			background: $gt-button-primary-background;
+			border: $gt-button-border-width solid
+				$gt-button-primary-border-color;
+		}
+		
+		&--success {
+		    color: $gt-button-success-color;
+		    background: $gt-button-success-background;
+		    border: $gt-button-border-width solid
+		      $gt-button-success-border-color;
+		}
+		
+		&--danger {
+			color: $gt-button-danger-color;
+			background: $gt-button-danger-background;
+			border: $gt-button-border-width solid
+				$gt-button-danger-border-color;
+		}
+		
+		&--warning {
+			color: $gt-button-warning-color;
+			background: $gt-button-warning-background;
+			border: $gt-button-border-width solid
+				$gt-button-warning-border-color;
+		}
+		
+		&--plain {
+		    background: $gt-button-plain-background;
+		
+		    &.gt-button--primary {
+		      color: $gt-button-primary-background;
+		    }
+		
+		    &.gt-button--success {
+		      color: $gt-button-success-background;
+		    }
+		
+		    &.gt-button--danger {
+		      color: $gt-button-danger-background;
+		    }
+		
+		    &.gt-button--warning {
+		      color: $gt-button-warning-background;
+		    }
+		}
+		
+		&--hairline {
+		    position: relative;
+				border-width: 0rpx !important;
+				z-index: 0;
+				
+				&::after {
+					content: "";
+					border-style: inherit !important;
+					border-color: inherit !important;
+					border-radius: calc($gt-button-radius * 2);
+					box-sizing: border-box !important;
+					position: absolute;
+					border-width: 2rpx !important;
+					left: 0;
+					top: 0;
+					width: 200% !important;
+					height: 200% !important;
+					transform-origin: 0 0;
+					transform: scale(0.5) !important;
+					z-index: -1;
+				}
+			
+		
+		    &.gt-button--round::after {
+		      border-radius: $gt-button-round-radius;
+		    }
+		
+		    &.gt-button--square::after {
+		      border-radius: 0;
+		    }
+		}
+
+
+	
+}

@@ -4,15 +4,15 @@
 		<view class="text-area">
 			<text class="title fs30">{{title}}</text>
 		</view>
-    <test />
+    <!-- <test /> -->
 	</view>
 </template>
 
 <script>
-// import test from './test.vue'; 测试组件
+import test from './test.vue'; // 测试组件
 	export default {
     components: {
-      // test
+      test
     },
 		data() {
 			return {
@@ -24,7 +24,7 @@
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	.content {
 		display: flex;
 		flex-direction: column;
@@ -46,7 +46,7 @@
 
 		.title {
 			font-size: 36rpx;
-			color: $u-type-primary;
+			color: $gt-blue;
 		}
 	}
 
